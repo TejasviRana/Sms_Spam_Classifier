@@ -6,21 +6,21 @@ import nltk
 nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopword')
-# # Function to download NLTK resources
-# def download_nltk_resources():
+# Function to download NLTK resources
+def download_nltk_resources():
     
-#     try:
-#         nltk.data.find('tokenizers/punkt')
-#     except LookupError:
-#         nltk.download('punkt')
+    try:
+        nltk.data.find('tokenizers/punkt')
+    except LookupError:
+        nltk.download('punkt')
 
-#     try:
-#         nltk.data.find('corpora/stopwords')
-#     except LookupError:
-#         nltk.download('stopwords')
+    try:
+        nltk.data.find('corpora/stopwords')
+    except LookupError:
+        nltk.download('stopwords')
 
-# # Call the function to ensure resources are available
-# download_nltk_resources()
+# Call the function to ensure resources are available
+download_nltk_resources()
 
 # # Now import after ensuring they're available
 from nltk.tokenize import word_tokenize
